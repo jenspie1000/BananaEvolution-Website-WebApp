@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    "target": "ES2020",
+    "lib": [ "ES2020", "DOM", "DOM.Iterable" ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+
+    // IMPORTANT: allow emit so -b can write outputs
+    "declaration": true,
+    "declarationDir": "./.types/app",
+    "emitDeclarationOnly": true,
+    "outDir": "./.tsbuild/app"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/vite-env.d.ts"
+  ]
+}
